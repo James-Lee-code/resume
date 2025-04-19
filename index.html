@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <section class="bg">
+        <div class="loading-text">0%</div>
+      </section>
     <nav class="navbar">
         <img class="logo" src="images/logo.png">
         <ul class="menu">
@@ -20,12 +23,21 @@
             <li><a href="game/index.html" target="_blank">貪食蛇遊戲</a></li>
             <li><button class="primary-button navbar-button"><a href="mailto:acc22331@gmail.com">CONTACT</a></button></li>
         </ul>
-        <div class="hamburger-button">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
 
+        <div class="overlay"></div>
+
+        <button class="nva-btn open-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="ham">
+            <ul class="menu-hamber">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">工作經歷</a></li>
+                <li><a href="japan/index.html" target="_blank">日本旅遊網站</a></li>
+                <li><a href="game/index.html" target="_blank">貪食蛇遊戲</a></li>
+                <li><a href="mailto:acc22331@gmail.com">CONTACT</a></li>
+            </ul>
+        </div>
         
     </nav>
     <main>
@@ -63,7 +75,7 @@
     </div>
     st
 <h2 class="sec-heading">工作經歷</h2>
-    <div class="job-section">
+    <div class="job-section box">
         <div class="section-container job-1">
                 <img class="photo-1"  src="images/project.jpg" alt="">
                 <div>
@@ -76,7 +88,7 @@
     </div>
 
 
-    <div class="web-section">
+    <div class="web-section box">
         <div class="section-container web">
             <img class="photo-2" src="images/code.jpg" alt="">
             <div class="web-bg">
@@ -87,7 +99,7 @@
         </div>
     </div>
 
-    <div class="seo-section">
+    <div class="seo-section box">
         <div class="section-container seo">
         <img class="photo-2" src="images/seo-1.jpg" alt="">
         <div>
@@ -99,7 +111,7 @@
 </div>
 
 
-<div class="google-section">
+<div class="google-section box">
     <div class="section-container google">
         <img class="photo-2" src="images/about.jpg" alt="">
         <div class="google-bg">
@@ -126,6 +138,7 @@
        </main>
 
        <script src="gradient.js"></script>
+       <script src="hamberger.js"></script>
 </body>
 
 </html>
