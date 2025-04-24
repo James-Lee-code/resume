@@ -111,7 +111,6 @@ hr{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
   box-sizing: border-box;
 }
 
@@ -260,7 +259,7 @@ hr{
 }
 
 /* hamberger */
-.nva-btn{
+.nav-btn{
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -335,7 +334,7 @@ hr{
   width: 100%;
   height: 100vh;
   position: fixed;
-  background-color: #111;
+  background-color: rgba(250, 250, 250, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,7 +345,7 @@ hr{
 
 .loading-text {
   font-size: 48px;
-  color: white;
+  color: black;
   transition: opacity 0.5s ease;
 }
 
@@ -401,13 +400,19 @@ main{
   width: 100%;  
   position: relative;
   padding: calc(var(--spacing-xl) * 3) 0;
-  z-index: -1;
+  z-index: 1;
 }
 
-.self-photo{
-  max-width: 35%;
+.self-photo {
+  width: 35%;
+  min-width: 180px;
+  max-width: 280px;
+  height: auto;
   border-radius: 50%;
   border: 10px solid #000;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 /*parnert seaction*/
 
@@ -600,9 +605,6 @@ main{
   width: 8%;
   object-fit: cover;
 }
-.down{
-  padding: 0;
-}
 
 /*table size*/
 
@@ -665,10 +667,11 @@ main{
   .two-column .col-left{
     margin: 0 0 0 var(--spacing-xl);
   }
+  
   .job-1 .photo-1{
     margin: 0  var(--spacing-lg);
     }
-    .seo .photo-2,.google .photo-2,.web.photo-2{
+    .seo .photo-2,.google .photo-2,.web .photo-2{
       margin: 0  var(--spacing-lg);
     }
     .job-content,.seo-content,.google-content,.web-content{
@@ -684,10 +687,12 @@ main{
 
   /*mobile size*/
 @media only screen and (max-width: 550px){
-  .partners-grid {
-    grid-template-columns: 1fr ;
-    row-gap: var(--spacing-xl);
-  }
+
+.partners-grid {
+  grid-template-columns: 1fr ;
+  row-gap: var(--spacing-xl);
+}
+
 .two-column{
   flex-direction: column;
 }
@@ -695,8 +700,7 @@ main{
   width: 100%;
   margin: 0 var(--spacing-md);
 }
-.col-right
-.self-photo{
+.col-right .self-photo{
   display: none;
 }
 
