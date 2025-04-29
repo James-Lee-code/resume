@@ -397,12 +397,9 @@ main{
 }
 
 .self-photo {
-  width: 35%;
   min-width: 180px;
   max-width: 280px;
   height: auto;
-  border-radius: 50%;
-  border: 10px solid #000;
   object-fit: cover;
   display: block;
   margin: 0 auto;
