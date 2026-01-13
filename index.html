@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pre.css">
+    <link rel="icon" href="images/favicon-1.ico">
+
+</head>
+ 
+<body>
+    <section class="bg">
+        <div class="loading-text">0% </div>
+      </section>
+    <nav class="navbar">
+        <img class="logo" src="images/logo.png">
+
+        <!-- 桌機選單 -->
+        <ul class="menu">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">工作經歷</a></li>
+            <li><a href="#">MERN專案</a></li>
+            <li class="has-dropdown">
+            <a href="#">
+                React
+                <i class="fa-solid fa-caret-down arrow"></i>
+            </a>
+            <ul class="dropdown">
+                <li><a href="https://food-next-ten.vercel.app/" target="_blank">點餐平台</a></li>
+                <li><a href="https://react-todo-project-six.vercel.app/" target="_blank">Todo 清單</a></li>
+            </ul>
+            </li>
+            <li class="has-dropdown">
+            <a href="#">
+                Vue
+                <i class="fa-solid fa-caret-down arrow"></i>
+            </a>
+            <ul class="dropdown">
+                <li><a href="https://vue-courses.netlify.app/courses" target="_blank">課程平台</a></li>
+                <li><a href="https://nuxt-vue-todo.netlify.app/auth/" target="_blank">Todo 專案</a></li>
+            </ul>
+            </li>
+
+            <li class="has-dropdown">
+            <a href="#">
+                網站
+                <i class="fa-solid fa-caret-down arrow"></i>
+            </a>
+            <ul class="dropdown">
+                <li><a href="https://james-lee-code.github.io/resume/candy/index.html" target="_blank">bootstrap 網站</a></li>
+                <li><a href="https://james-lee-code.github.io/resume/japan/index.html" target="_blank">日本旅遊網站</a></li>
+                <li><a href="https://james-lee-code.github.io/resume/game/index.html" target="_blank">貪食蛇遊戲</a></li>
+            </ul>
+            </li>
+
+            <li>
+            <a class="primary-button" href="mailto:acc22331@gmail.com">CONTACT</a>
+            </li>
+        </ul>
+
+        <div class="overlay"></div>
+
+        <!-- hamburger button -->
+        <button class="nav-btn open-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- 手機選單 -->
+<div class="ham">
+  <ul class="menu-hamber">
+    <li><a href="#">首頁</a></li>
+    <li><a href="#">工作經歷</a></li>
+
+    <li class="ham-has-dropdown">
+        <button class="ham-dropdown-toggle">
+            React
+            <i class="fa-solid fa-caret-down arrow"></i>
+        </button>
+        <ul class="ham-dropdown">
+            <li><a href="https://food-next-ten.vercel.app/" target="_blank">點餐平台</a></li>
+            <li><a href="https://react-todo-project-six.vercel.app/" target="_blank">Todo 清單</a></li>
+        </ul>
+    </li>
+
+    <li class="ham-has-dropdown">
+        <button class="ham-dropdown-toggle">
+            Vue
+            <i class="fa-solid fa-caret-down arrow"></i>
+        </button>
+
+        <ul class="ham-dropdown">
+            <li><a href="https://vue-courses.netlify.app/courses" target="_blank">課程平台</a></li>
+            <li><a href="https://nuxt-vue-todo.netlify.app/auth/" target="_blank">Todo 專案</a></li>
+        </ul>
+    </li>
+
+    <li class="ham-has-dropdown">
+      <button class="ham-dropdown-toggle">
+        網站
+        <i class="fa-solid fa-caret-down arrow"></i>
+      </button>
+
+      <ul class="ham-dropdown">
+        <li><a href="https://james-lee-code.github.io/resume/candy/index.html" target="_blank">bootstrap 網站</a></li>
+        <li><a href="https://james-lee-code.github.io/resume/japan/index.html" target="_blank">日本旅遊網站</a></li>
+        <li><a href="https://james-lee-code.github.io/resume/game/index.html" target="_blank">貪食蛇遊戲</a></li>
+      </ul>
+    </li>
+
+    <li><a href="mailto:acc22331@gmail.com">CONTACT</a></li>
+  </ul>
+</div>
+
+    </nav>
+
+    <main>
+        <canvas id="gradient-canvas"></canvas>
+
+        <div class="hero">
+        <div class="section-container two-column ">
+            <div class="col-left reveal-up delay-1">
+                <p class="subtitle2">Hello! I am</p>
+                <h1 class="name">李定原</h1><hr>
+                <p>2023-2024 /安哲實踐股份有限公司-行銷企劃</p>
+                <p>2020-2021 /富邦人壽保險股份有限公司-新人實習</p>
+                <p>我對於設計網站非常有興趣其中當成品完成時會有滿滿的成就感
+                </p>
+                <button class="secondary-button with-icon">
+                    Let's go
+                    <img src="images/arrow-right-purple.svg" alt="">
+                </button>
+            </div>
+
+            <div class="col-right box">
+                <img class="self-photo" src="images/self.png">
+            </div>
+        </div>
+    </div>
+
+<div class="partners-section">
+  <div class="partners-marquee">
+    <div class="partners-track" id="partnersTrack">
+      <img src="images/slack-1.png">
+      <img src="images/vue.png">
+      <img src="images/nuxt.png">
+      <img src="images/gmail.png">
+      <img src="images/google.png">
+      <img src="images/vs.png">
+    </div>
+  </div>
+</div>
+
+
+
+        <h2 class="sec-heading">
+            <div class="reveal-wrapper">
+                <span class="reveal-up">工作經歷</span>
+            </div>
+        </h2>
+
+
+    <div class="job-section">
+        <div class="section-container job-1 reveal-up delay-1">
+                <img class="photo-1"  src="images/project.jpg" alt="">
+                <div>
+                    <p class="subtitle2 an">行銷企劃</p>
+                    <p class="subtitle an">安哲實踐股份有限公司</p><hr>
+                    <p class="job-content">您好，我在上一份工作中負責參與了完整的商品生成從一開始的選擇商品、商品製作過程到商品包裝，以及商品在市場上的競品分析，最後商品拍攝和文案產出上架官網。 另外也負責找尋合適的 KOL合作人選，透過提案報價來溝通合作不管是短期、長期合作來達成市場上曝光同時讓多人認識品牌。</p>
+                    <a class="link" href="files/團購合作.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="web-section">
+        <div class="section-container web ">
+            <img class="photo-2 reveal-up" src="images/code.jpg" alt="">
+            <div class="web-bg  reveal-up delay-1">
+                <p class="subtitle2">程式語言</p>
+                <p class="subtitle">自主學習</p><hr>
+                <ol class="web-content" >
+                    <li class="web-list">前端基礎與互動實作（履歷 / 旅遊網站 / 貪食蛇）</li>
+                    <p>
+                    使用 HTML、CSS、JavaScript 建構個人履歷與旅遊資訊網站，完整實作 RWD 響應式設計，
+                    並透過 SCSS 與 Bootstrap 建立可維護的樣式架構。
+                    同時以原生 JavaScript 開發貪食蛇小遊戲，練習 DOM 操作、事件監聽與基礎遊戲邏輯，
+                    強化前端互動與流程控制能力。
+                    </p>
+
+                    <li class="web-list"
+                        >MERN Stack 全端專案 
+                        <a class="link-2" href="https://astonishing-manatee-475f71.netlify.app/" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </li>
+                    <p>
+                    使用 React 作為前端核心，搭配 Node.js + Express 建立後端 API，並以 MongoDB 進行資料儲存。
+                    實作使用者註冊 / 登入 / 留言與 CRUD 功能，透過 RESTful API 串接前後端資料，
+                    並加入表單驗證與錯誤處理機制。前端部署於 Netlify，後端部署於 Render，
+                    完成完整專案開發到上線流程。
+                    </p>
+
+                    <li class="web-list">
+                        React 專案 
+                        - 點餐平台 ( React / MongoDB) <a class="link-2" href="https://food-next-ten.vercel.app/" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                    </a></li>
+                    <p>
+                        功能：菜單列表顯示、新增菜單、結帳系統、購物車。
+                    </p>
+
+                    <li class="web-list">
+                        React 專案 - Todo 清單 
+                        <a class="link-2" href="https://react-todo-project-six.vercel.app/" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                    </a></i>
+                    </li>
+                    <p>
+                        功能：待辦事項新增、刪除、狀態切換。
+                    </p>
+
+                    <li class="web-list">
+                            Vue 專案 - 課程平台 ( Vue / Firebase )
+                        <a class="link-2" href="https://vue-courses.netlify.app/courses" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </li>
+                    <p>
+                    功能：課程列表展示、課程內容頁面切換功能、新增課程、登入驗證、留言系統。
+                    </p>
+
+                    <li class="web-list">
+                        Nuxt 專案 - Todo ( Vue / Supabase )
+                        <a class="link-2" href="https://nuxt-vue-todo.netlify.app/auth/" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </li>
+                    <p>
+                    功能：登入驗證、頁面權限控管、Todo CRUD 操作。
+                    </p> 
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="seo-section">
+        <div class="section-container seo  reveal-up delay-1">
+        <img class="photo-2" src="images/seo-1.jpg" alt="">
+        <div>
+            <p class="subtitle2">seo</p>
+            <p class="subtitle">自主學習</p><hr>
+            <p class="seo-content"> 具備網站 SEO 優化能力，能進行網站架構與內容調整以提升自然搜尋排名。熟悉關鍵字監控、競品網站分析與標題結構優化，能配合前端開發一併考量 SEO 結構，提升網站能見度與點擊表現。</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="google-section box">
+    <div class="section-container google">
+        <img class="photo-2" src="images/about.jpg" alt="">
+        <div class="google-bg">
+            <p class="subtitle2">google</p>
+            <p class="subtitle">自主學習</p><hr>
+            <p class="google-content"> 曾參加數位廣告課程，有操作 Google、Facebook、Instagram、LINE 等平台的經驗。能撰寫提升點擊率與轉換率的文案，並透過廣告數據分析指標（如 CPM、CPC、ROAS、品質分數）進行優化，提升廣告投資報酬率。熟悉 GA4 與 Search Console，能追蹤網站表現並提出調整建議。</p>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class=" footer">
+        <div class="footer-section">
+            <img class="logo-footer" src="images/logo.png" alt="">
+            <p class="footer-name">&copy; 2026 李定原</p>
+        </div>
+            <ul class="menu-down">
+                <li class="arrow-up"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></li>
+            </ul>
+    </div>
+</footer>
+
+       </main>
+
+       <script src="gradient.js"></script>
+       <script src="hamburger.js"></script>
+</body>
+
+</html>
