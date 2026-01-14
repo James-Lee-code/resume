@@ -113,7 +113,7 @@ header {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   pointer-events: none;
   transition: 0.3s ease;
@@ -127,12 +127,11 @@ header {
 
 .ham {
   position: fixed;
-  top: 70px;
+  top: 90px;
   right: 16px;
   width: 260px;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
-
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease;
@@ -166,7 +165,7 @@ header {
 
 .bg-img {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   background-image: url("../images/japan-1.jpg");
   background-size: cover;
   background-position: center;
@@ -195,49 +194,50 @@ header {
 ===================== */
 
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
   padding: 4rem;
   background: #fff;
 
-.card {
+  .card {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    width: 450px;
+    width: 400px;
 
-        .photo {
-        height: 300px;
-        width: 100%;
-        object-fit: cover;
-        }
-
-        .card-content {
-            padding: 16px;
-            display: flex;
-        }
-
-            h3 {
-                margin-top: 0;
-            }
-
-            p {
-                font-size: 14px;
-            }
-
-            .card-btn {
-                margin-left: auto;
-                margin-top: 12px;
-                padding: 8px 16px;
-                border-radius: 20px;
-                background: #000;
-                color: #fff;
-                font-size: 14px;
-            }
-        }
+    .photo {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
     }
+
+    .card-content {
+      padding: 16px;
+      display: flex;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .card-btn {
+      margin-left: auto;
+      margin-top: 12px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: #000;
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+}
+
 
 
 /* =====================
@@ -320,5 +320,16 @@ footer {
     .nva-btn {
       display: block;
     }
+  }
+  .card-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    max-width: 450px;
+    flex: 0 1 100%;
   }
 }
