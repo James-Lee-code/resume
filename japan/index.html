@@ -6,15 +6,15 @@
     <title>日本旅遊指南</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" href="images/favicon-2.ico">
     
 </head>
 <body>
-    <img class="fixed-image" src="images/japan-4.jpg" alt="">
+    <img class="fixed-image" src="./images/japan-4.jpg" alt="">
     <header>
         <section class="logo">
-            <img src="images/japan-icon.png" alt="japan">
+            <img src="./images/icon.png" alt="japan">
             <h1>2025日本旅遊指南</h1>
         </section>
         <nav>
@@ -51,7 +51,7 @@
 
         <section class="card-container">
           <div class="card">
-            <img class="photo" src="images/japan-5.jpg" alt="">
+            <img class="photo" src="./images/東京.jpg" alt="">
             <div class="card-content">
             <h3>東京</h3>
             <p>日本的首都東京是日本政治、文化和經濟的中心地。如果想從各個角度感受日本的魅力，東京觀光是最好的選擇。東京不僅有很多代表日本歷史文化的名勝古蹟，還融入了來自世界各地的文化與時尚，更是匯集了世界各國料理的美食基地，好玩、好吃、好買的景點多到會令人眼花繚亂。</p>
@@ -59,7 +59,7 @@
              </div>
           </div>  
           <div class="card">
-            <img class="photo" src="images/japan-6.jpg" alt="">
+            <img class="photo" src="./images/北海道.jpg" alt="">
             <div class="card-content">
             <h3>北海道</h3>
             <p>北海道各地的風景及美食多種多樣，無論造訪幾次，都有全新的冒險樂趣在等待著您，歡迎前來探索發掘！在雄偉壯闊的大自然中欣賞四季美景，或體驗豐富多彩的戶外活動，感受北海道的獨特。在此將介紹北海道的眾多魅力，例如極品美食，還有各種泉質的溫泉勝地！</p>
@@ -67,7 +67,7 @@
              </div>
           </div>    
           <div class="card">
-            <img class="photo" src="images/japan-7.jpg" alt="">
+            <img class="photo" src="./images/九州.jpg" alt="">
             <div class="card-content">
             <h3>九州</h3>
             <p>九州七個縣包括福岡、佐賀、長崎、大分、熊本、宮崎、鹿兒島，受惠於豐富的自然和溫暖的氣候，觀光資源豐富，自然環境變化多，火山林立且擁有許多溫泉及海岸線與島嶼；九州亦是個美食之都，因富饒的大自然所孕育而生的豐富食材，也造就了各地種類豐富且具特色之鄉土料理。</p>
@@ -109,15 +109,15 @@
         setInterval(() => {
           let topBackground = document.querySelector("section.bg-img");
           if (
-            topBackground.style.backgroundImage == 'url("images/japan-1.jpg")'
+            topBackground.style.backgroundImage == 'url("./images/japan-1.jpg")'
           ) {
-            topBackground.style.backgroundImage = 'url("images/japan-2.jpg")';
+            topBackground.style.backgroundImage = 'url("./images/japan-2.jpg")';
           } else if (
-            topBackground.style.backgroundImage == 'url("images/japan-2.jpg")'
+            topBackground.style.backgroundImage == 'url("./images/japan-3.jpg")'
           ) {
-            topBackground.style.backgroundImage = 'url("images/japan-3.jpg")';
+            topBackground.style.backgroundImage = 'url("./images/japan-4.jpg")';
           } else {
-            topBackground.style.backgroundImage = 'url("images/japan-1.jpg")';
+            topBackground.style.backgroundImage = 'url("./images/japan-1.jpg")';
           }
         }, 3000);
       </script>
